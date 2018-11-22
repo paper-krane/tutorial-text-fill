@@ -1,0 +1,74 @@
+*, ::before, ::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300rem;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #111111;
+    color:#3a3a3a;
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+h1 {
+    font-size: 2rem;
+}
+.italic {
+    font-style: italic;
+}
+.full-height {
+    min-height: 100vh;
+    padding: 5rem 0;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.center {
+    text-align: center;
+}
+
+/* Text hover styles */
+/* ============================================================ */
+/* ============================================================ */
+
+.jumbo-text {
+    font-size: 15vw;
+    letter-spacing: .25em;
+    line-height: 1em;
+    margin: 0 -.25em 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    position: relative;
+    overflow: hidden;
+    color: #2a2a2a;
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+}
+.jumbo-text:before {
+    content: attr(data-text);
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ff5e62;
+    overflow: hidden;
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+}
+.jumbo-text:hover:before {
+    width: 100%;
+}
+
+/* ============================================================ */
+/* ============================================================ */
